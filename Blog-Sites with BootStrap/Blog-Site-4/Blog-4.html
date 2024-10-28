@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+
+    <link rel="stylesheet" href="Assets/Styles/Blog-4.css">
+</head>
+
+<body class="bg-light">
+
+    <header class="container-fluid h-custom-background ">
+        <nav class="navbar navbar-expand-md nav-custom text-center p-4">
+
+            <a class="navbar-brand " href="main.html"></a>
+
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <span class="navbar-toggler-icon text-white p-0">
+                    <i class="bi bi-menu-button-wide"></i>
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-1\Blog-1.html">Blog 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-2/Blog-2.html">Blog 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-3/Blog-3.html">Blog 3</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-4/Blog-4.html">Blog 4</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container bg-white p-5">
+
+        <section id="hero-section" class="row">
+
+
+            <div class="col-lg-7 col-12 p-4">
+                <h1 class="mb-4"> IMDb Web Scrapping</h1>
+
+                <span>
+                    <img src="Assets/Images/Hina's-Photo.jpeg" alt="Hina's photo" class="img-fluid" style="width: 50px; height: 50px; border: 2px solid rgb(116, 114, 114) ; border-radius: 50%;">
+                    <h4 class="d-inline ms-2 "> Hina Idrees on Oct-04, 2024</h4>
+                </span>
+
+                <p class="text-secondary mt-4">
+                    I developed the <b>IMDb Top 250 Movies Scraper</b> using Python to automate the extraction of
+                    detailed information about the top 250 movies listed on IMDb. By leveraging Selenium for web
+                    automation and pyodbc for database interactions, this tool efficiently gathers comprehensive
+                    data and stores it in a SQL Server database. The primary goal is to visualize this data in Power
+                    BI, creating insightful reports such as "Movies Rating through Rating-Count," "Director Rating
+                    Count out of IMDb Rating in Top 250 Movies," "Stars Rating in Top 250 Movies through IMDb
+                    Rating," and various "Top Box Office" dashboards.</p>
+
+                <button type="button" class="btn btn-info">
+                    <a class="text-light text-decoration-none fw-bold"
+                        href="https://www.linkedin.com/in/hina-ch-2baa75215/">Visit Profile</a>
+                </button>
+
+            </div>
+            <div class="col-lg-5 col-12 p-4">
+                <img src="Assets/Images/banner-1-4.jpg" alt="banner-1-4" class="img-fluid rounded"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+
+        </section>
+
+
+        <section id="ssection-1" class="row my-5">
+
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Overview</h2>
+                </div>
+                <div class="col-1">
+                    <!-- <img src="data-anim-1.gif" width="80px" height="80px" alt="data-animation" class="animation"> -->
+
+                </div>
+            </div>
+
+
+            <div class="row my-5">
+
+                <div class="col-lg-7 col-12 p-4 ">
+
+                    <p>In this project, I’ll guide you through the entire process of extracting movie data from
+                        IMDb,storing it in an SQL database, and visualizing it using Python’s powerful libraries.
+                        Whether
+                        you're a data enthusiast, a developer, or a researcher, this comprehensive guide will equip you
+                        with the skills to automate data collection, manage it efficiently, and create meaningful visual
+                        representations.
+                    </p>
+
+
+                    <img src="Assets/Images/data-visualization-1-4.jpg" alt="data-visualization-1-4 image"
+                        class="img-fluid rounded mb-4 text-center" style="width: 100%;  object-fit: cover; ">
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-5 col-12 p-4  ">
+                    <h4>Project Breakdown:</h4>
+
+                    <ol>
+                        <li><b>Automating Data Extraction with Selenium: </b>Leveraging Selenium to scrape detailed
+                            information from IMDb's Top 250 Movies.</li>
+                        <li><b>Efficient Data Management with SQL Server:</b> Storing the scraped data in a structured
+                            SQL database for easy access and manipulation.</li>
+                        <li><b>Visualizing Data with Power BI:</b> In this final phase, we will harness the power of
+                            Power BI to transform our analysis into engaging visual representations. After collecting
+                            and storing the data, we will utilize Power BI’s robust features to design interactive
+                            dashboards. By creating various charts including column, donut, stacked area, and
+                            decomposition tree, we can effortlessly explore and interact with our insights.</li>
+                    </ol>
+
+                    <p>By the conclusion of this project, you will have learned how to automate data gathering, manage
+                        it effectively, and create visuals that breathe life into your data. Let’s dive in!</p>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="section-2" class="row my-5">
+            <div class="row my-5">
+                <div class="col-10 border-3 p-3 ms-4 mt-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Why This Project Matters</h2>
+
+                </div>
+                <div class="col-1">
+                    <!-- <img src="Folder-1.gif" width="100px" height="100px" alt="folder animation" class="animation"> -->
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-12 p-4 ">
+                <p>
+                    The primary use case for this scraper is to scrap the IMDb's Top 250 movies. Specifically, I
+                    aimed to extract the following details for each movie:
+                <ul>
+                    <li>Title</li>
+                    <li>Year</li>
+                    <li>Runtime</li>
+                    <li>Movie Time</li>
+                    <li>Rating Count</li>
+                    <li>IMDB_Rating</li>
+                    <li>Description</li>
+                    <li>Stars</li>
+                    <li>Directors</li>
+                    <li>ImageURL</li>
+
+                </ul>
+                </p>
+
+            </div>
+
+            <div class="col-lg-6 col-12 p-4  ">
+
+                <img src="Assets/Images/analysis-1-4.jpeg" alt="analysis-1-4" class="img-fluid rounded mb-4 sec-2-img"
+                    style="width: 90%; height: 90%; object-fit: cover;  ">
+
+
+
+            </div>
+
+            <div class="col-lg-6 col-12 p-4 ">
+
+                <img src="Assets/Images/stream-analysis-1-4.jpg" alt="stream-analysis-1-4" class="img-fluid rounded mb-4 sec-2-img"
+                    style="width: 90%; height: 70%; object-fit: cover;  ">
+
+
+
+            </div>
+
+            <div class="col-lg-6 col-12 p-4 ">
+                <p>
+                    Once extracted, this data is stored in a SQL Server database, which serves as the data source
+                    for Power BI. The visualization objectives include:
+                <ol>
+                    <li><b>Movies Rating through Rating-Count Report:</b> Analyze the distribution of IMDb ratings
+                        against the number of ratings each movie has received.</li>
+                    <li><b>Director Rating Count out of IMDb Rating in Top 250 Movies:</b> Assess the performance of
+                        directors based on the IMDb ratings of their movies within the Top 250 list.</li>
+                    <li><b>Stars Rating in Top 250 Movies through IMDb Rating:</b> Evaluate the performance of
+                        actors
+                        and actresses by analyzing their movies' IMDb ratings.</li>
+                    <li><b>Top Box Office Dashboards:</b>
+                        <ul>
+                            <li><b>Top Box Office Weekly Gross Out of Total Gross in Total Number of Weeks
+                                    Report:</b> Track weekly gross earnings of top movies against their total gross
+                                over multiple weeks.</li>
+                            <li><b>Maximum Rating Count out of IMDb Rating in Box Office:</b> Identify movies with
+                                the highest number of ratings in relation to their IMDb ratings within box office
+                                performances.</li>
+                            <li><b>Stars Rating Count out of Total IMDb Rating in Box Office:</b> Analyze how
+                                actors' or actresses' movies perform in terms of IMDb ratings within the box office
+                                segment.</li>
+                            <li><b>Directors Rating Count out of Total IMDb Rating in Box Office:</b> Assess
+                                directors' performance based on the IMDb ratings of their box office movies.</li>
+                        </ul>
+                    </li>
+                </ol>
+                </p>
+            </div>
+
+
+
+        </section>
+
+
+
+        <section id="section-3" class="row my-5">
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Tools and Technologies for my Project </h2>
+                </div>
+                <div class="col-1">
+                    <!-- <img src="Folder-2.gif" width="100px" height="100px" alt="folder-2 animation" class="animation"> -->
+
+                </div>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-lg-7 col-12 p-4 ">
+                    <p>In this project, several key tools and technologies were utilized to achieve efficient data
+                        scraping, storage, and visualization.</p>
+
+
+                    <h4>Selenium: </h4>
+                    <p>It was employed to automate browser interactions for scraping data from websites like IMDb.
+                        It enabled seamless navigation through web pages, extraction of data using specific
+                        selectors, and interaction with various web elements, significantly reducing the manual
+                        effort required to gather comprehensive movie details.</p>
+
+
+
+
+
+                    <h4>WebDriver Manager: </h4>
+                    <p>It was integrated to manage the browser driver automatically. It streamlined the process by
+                        downloading and configuring the correct version of ChromeDriver, which eliminated the need
+                        for manual handling and ensured compatibility with the installed version of Google Chrome.
+                        This not only saved time but also minimized potential errors related to driver mismatches.
+                    </p>
+
+
+
+
+                    <h4>Pyodbc: </h4>
+                    <p>To connect the project to an SQL database, <b> pyodbc </b> utilized. This library facilitated
+                        the storage and retrieval of scraped movie data in a structured format within the database.
+                        By providing a reliable interface to interact with SQL Server, pyodbc ensured that data
+                        could be efficiently managed, queried, and maintained for future analysis.</p>
+
+
+
+
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 ">
+
+                    <img src="Assets/Images/data-4-2.jpeg" alt="data-4-2" class="img-fluid rounded mb-4"
+                        style="width:100%; height: 50%; object-fit: cover; ">
+
+                    <h4>Pandas(pd): </h4>
+                    <p>Lastly, Pandas (pd) played a crucial role in manipulating and analyzing the scraped data.
+                        With its powerful data structures and functions, Pandas allowed for the cleaning,
+                        transformation, and preparation of data for visualization and storage in the SQL database.
+                        This ensured that the data was in an optimal state for generating insightful visualizations
+                        and performing detailed analyses.</p>
+
+                </div>
+        </section>
+
+
+        <section id="section-4" class="row my-5">
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Section 1: Extracting Data from IMDb with Selenium</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>Understanding Selenium:</h4>
+                    <p>Selenium employs the WebDriver protocol to automate processes on widely-used browsers like
+                        Firefox, Chrome, and Safari. This automation can be executed locally for tasks like testing
+                        web pages or remotely for purposes such as web scraping.</p>
+                </div>
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>Preparing for the Setup</h4>
+                    <p>Here’s a step-by-step guide on how to use Selenium, with the example of extracting data from
+                        IMDb.</p>
+                </div>
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>Step 1 — Install and Imports</h4>
+                    <p>First, install the required Python packages:
+                    <pre>
+                        <code>
+    pip install selenium webdriver-
+    manager pyodbc
+                        </code>
+                    </pre>
+                    </p>
+
+                    <p>
+                        Once the installation is complete, proceed with the imports:
+                    <pre><code>
+    import time
+    from selenium import webdriver
+    from selenium.webdriver.
+    chrome.service import Service
+
+    from selenium.webdriver.common.
+    by import By
+
+    from webdriver_manager.chrome i
+    ChromeDriverManager
+
+    import pyodbc
+                    
+                </code></pre>
+                    </p>
+
+                    <!-- <img src="coding-2-4.jpg" alt="extraction-2-3" class="img-fluid rounded mb-4"
+                    style="width:100%;  object-fit: cover; "> -->
+                </div>
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>Step 2: Install and Access WebDriver</h4>
+                    <p>To automate browser actions, a WebDriver is essential. It opens the browser and interacts
+                        with websites. For Chrome users, you will need the ChromeDriver, which can be downloaded
+                        based on your browser version. To check your Chrome version, follow these steps:
+                    <ol>
+                        <li>Click the three dots in the top-right corner of the browser.</li>
+                        <li>Navigate to Help > About Google Chrome.</li>
+                    </ol>
+                    </p>
+                    <p> This will display your version.</p>
+                    <p>You must know where the WebDriver is stored on your computer, typically in the Downloads
+                        folder. Create a driver variable pointing to the file path where the WebDriver is saved:
+                    <pre><code>
+    driver = webdriver.Chrome('/Users/
+    MyUsername/Downloads/chromedriver')
+
+                    </code></pre>
+                    <b>Note:</b> If you haven't installed ChromeDriver, you can do it automatically in your script
+                    using
+                    <pre><code>
+    service = Service(ChromeDriverManager
+    ().install())
+                
+                 </code></pre>
+                    </p>
+
+
+                    <p>
+                        This command handles the download and installation of the appropriate version of ChromeDriver
+                        for your browser automatically. It streamlines the process, saving time and making sure you
+                        always have the correct version, so you don't have to worry about updating it manually.
+                    </p>
+
+
+                    <p>
+                        <b>Note:</b> When scraping websites like IMDb, they often block automated bots from
+                        accessing their content. To get around this, we can make our script look like a regular
+                        browser by including a User-Agent header. This header imitates the behavior of a real user
+                        browsing the site. For instance, the following line:
+                    <pre>
+                            <code>
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows 
+    NTWin64;x64) AppleWebKit/537.36 
+
+     (KHTMLGecko) Chrome/129.0.0.0 Safari/537.36'
+     }
+                            </code>
+                        </pre>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h3>Step 3 — Navigating to IMDb with Python</h3>
+                    <p>This step is straightforward but crucial in the web scraping process. To start scraping, you
+                        need your Python code to open the IMDb website (or any other site you want to scrape). With
+                        Selenium, the browser will automatically load the specified page, giving you the ability to
+                        interact with it and extract the needed data. By setting it up correctly, your script will
+                        behave like a regular user browsing the site, which is important when dealing with dynamic
+                        websites like IMDb.
+                    <pre><code>
+        driver.get(Website_Url_you_
+        want_to_scrape)
+                            </code></pre>
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="section-5" class="row my-5">
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Let's dive into the project!</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <p>
+                        To begin, we need to access IMDb's Top Movies page. The initial step involves obtaining the
+                        URL of the IMDb page from which we'll pull data. In this instance, we are targeting the Top
+                        250 Movies section.
+                    </p>
+
+                    <p>Here's how to retrieve the correct URL:
+                    <ul>
+                        <li>Launch your web browser.</li>
+                        <li>Head over to the IMDb website (www.imdb.com).</li>
+                        <li>Find and open the "Top 250 Movies" chart page.</li>
+                    </ul>
+                    Find and open the "Top 250 Movies" chart page.
+                    </p>
+                    <p>In this step, the function scrape_imdb_top_250(): is defined to scrape movie details, and a
+                        Chrome WebDriver is configured using Selenium along with WebDriver Manager. To prevent IMDb
+                        from detecting and blocking the script as a bot, a user-agent header is added, making the
+                        request appear as if it's coming from a regular browser session.
+                    <pre><code>
+    def scrape_imdb_top_250():
+    url = 'https://www.imdb.com/chart/top/'
+
+    # Set up the Chrome WebDriver using
+     WebDriver Manager
+
+    options = webdriver.ChromeOptions()
+    options.add_argument(f"user-agent=
+    {headers['User-Agent']}")
+
+    service = Service(ChromeDriverManager
+    ().install())
+
+    driver = webdriver.Chrome(service=service,
+    options=options)
+
+    driver.get(url)
+    time.sleep(3)
+
+                        </code></pre>
+                    </p>
+                    The driver.get(url) method directs the Chrome browser to open the IMDb page. To make sure the
+                    full page content is loaded before we start extracting any data, we include a short pause using
+                    time.sleep(3).
+                </div>
+
+
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h3>Extracting Movie Information</h3>
+                    <p>
+                        Once the page has fully loaded, we can begin locating and extracting important movie
+                        details. This includes the movie's title, IMDb rating, release year, duration, runtime, vote
+                        count, description, poster URL, stars, and director.
+                    </p>
+
+                    <p>
+                        We utilize Selenium to capture all the movie elements by targeting their class names. This
+                        generates a list of movies that we can loop through to retrieve the necessary details for
+                        each one.
+                        <code><pre>
+
+     # Find all movies listed in the Top 250 table
+
+     movies = driver.find_elements
+     (By.CLASS_NAME,'ipc-metadata-list-
+     summary-item__c')
+
+      movie_list = []
+
+                            </pre></code>
+                    </p>
+
+
+                    <img src="Assets/Images/coding-1-4.jpg" alt="coding-1-4" class="img-fluid rounded mt-4"
+                        style="width: 100%; height: 30%; object-fit: cover; ">
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section id="section-6" class="row my-5">
+            <div class="row ">
+                <div class="col-10 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Part 1: Retrieve Movie Details</h2>
+                </div>
+
+            </div>
+
+            <div class=" row my-5 justify-content-center">
+
+
+                <div class="col-lg-12 col-12 p-4 ">
+                    <p>In this phase, we pull out the movie title. The script checks if the title has a numeric prefix
+                        followed by a period (like "1. The Shawshank Redemption") and removes the number, leaving only
+                        the name. If there’s no number, the full title is used as it is.
+                        Since the title often includes a number, we split it into two parts and extract only the text
+                        portion for further use.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>1. Movie Title:</h4>
+                    <p>
+                    <pre><code>
+    for movie in movies:
+    # Extract title
+    title_column = movie.find_element
+    (By.CLASS_NAME, 'ipc-title__text')
+
+    full_title = title_column.text.strip()
+
+    # Check if the title contains a period
+    before splitting
+
+    if '.' in full_title:
+    title = full_title.split('.', 1)[1].strip()
+    else:
+
+    title = full_title  # If no period, 
+    use the entire title
+
+</code></pre>
+                    </p>
+
+                </div>
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>2. Retrieve Release Year:</h4>
+                    <p>
+                    <pre><code>
+    # Extract year
+    if len(inline_list_items) > 0:
+    year = inline_list_items[0].text.strip()
+    year = int(year) if year.isdigit() else None
+    else:
+
+    Here, we extract the year of the movie's
+    release using the XPath. If the year 
+    is available, it's converted into an 
+    integer. Otherwise, it's set as None.
+        year = None
+</code></pre>
+                    </p>
+
+                </div>
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>3. Extract IMDB rating:</h4>
+                    <p>
+                    <pre><code>
+    imdb_rating = movie.find_element
+    (By.CLASS_NAME, 'ipc-rating-
+    star--rating').text.strip()
+
+    imdb_rating = float(imdb_rating)
+    if imdb_rating
+ 
+    else None 
+</code></pre>
+                    </p>
+
+                </div>
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>4. Retrieve run time:</h4>
+                    <p>
+                    <pre><code>
+    if len(inline_list_items) > 2:
+    runtimeGen = inline_list_
+    items[2].text.strip()
+
+    else:
+    runtimeGen = 'N/A'
+
+        </code></pre>
+                    </p>
+
+                </div>
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>5. Retrieve Rating Count:</h4>
+                    <p>
+                    <pre><code>
+    rating_count = movie.find_element
+    (By.CLASS_NAME'ipc-rating-
+    star--voteCount')
+
+    .text.strip() if movie.find_elemen
+    (By.CLASS_NAME,ipc-rating-star--
+    voteCount') else 'N/A'
+        </code></pre>
+                    </p>
+
+
+                </div>
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>6. Retrieve Details:</h4>
+                    <p>In the screenshot above, the arrow indicates a button that you can click to reveal the
+                        Description, Director, and Stars data. When viewing the initial image of the Top 250
+                        Movies, you’ll notice that this information isn't visible. To access it, we must click
+                        that button first. This action instructs Selenium on how to proceed; otherwise, it won’t
+                        be able to scrape the required data</p>
+                    <p>
+                        To achieve this, you can add the following code snippet to the function we previously
+                        defined, scrape_imdb_top_250():
+                    <pre><code>
+    # Click the button to trigger the detailed view
+    try:
+    # Locate the button by ID and click it
+    button = driver.find_element(By.I'list
+    -view-option-detailed')
+
+    button.click()
+    time.sleep(2)  # Wait for the 
+    page to load the detailview
+
+    except Exception as e:
+    print(f"Error clicking the button: {e}")
+        
+    </code></pre>
+                    </p>
+
+                </div>
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>7. Extract Directors and Stars Details:</h4>
+                    <p>
+                    <pre><code>
+
+    director = movie.find_element(By.XPATH, 
+    './/span/a[@class="ipc-link ipc-link--
+    base dli-director-item"]').text.strip()
+     if movie.find_element(By.XPATH, 
+     './/span/a[@class="ipc-link ipc-link--
+     base dli-director-item"]') else 'N/A'
+
+
+    stars = [star.text.strip()
+     for star in 
+
+    movie.find_elements(By.XPATH,
+     './/span/
+
+    a[@class="ipc-link ipc-link--
+    base dli-cast-item"]')]
+
+            </code></pre>
+
+
+                    This step scrapes the director’s name and the list of starring actors for each movie using
+                    the XPath for each element. The stars are returned as a list of names.
+
+                    </p>
+                </div>
+
+
+
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>8. Extract the Movie URL:</h4>
+                    <p>
+                    <pre><code>
+    image_element = movie.
+    find_element(By.XPATH,
+
+    './/div/img[@class="ipc-image"]')
+
+    image_url = image_element.
+    get_attribute('src')
+            
+        </code></pre>
+
+                    Ultimately, the script retrieves the URL of the movie poster by pulling the src attribute
+                    from the image tag.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>9. Compile Movie Information:</h4>
+                    <p>
+                    <pre><code>
+    movie_list.append({
+        'Title': title,
+        'Year': year,
+        'Time': MovieTime,
+        'Runtime': runtimeGen,
+        'IMDb Rating': imdb_rating,
+        'Rating Count': rating_count,
+        'Description': description,
+        'Director': director,
+        'Stars': ", ".join(stars),
+        'Image URL': image_url
+    })
+
+        </code></pre>
+                    After scraping all the details for a movie, the information is organized into a dictionary
+                    and added to the movie_list. By the end of the script's execution, this list will hold all
+                    the collected movie data.
+                    </p>
+
+                </div>
+                <div class="col-lg-5 col-12 p-4 code ">
+                    <h4>10. Close the web driver:</h4>
+                    <p>
+                    <pre><code>
+        driver.quit()
+        return movie_list
+
+        </code></pre>
+                    </p>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+        <section id="section-7" class="row my-5">
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Part 2 - Storing Data in SQL Database</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>1. Establishing the Database Connection:</h4>
+                    <p>In this stage, we define the insert_into_database function. Within this function, we create a
+                        connection to a SQL Server using the pyodbc library. The connection string utilizes the "ODBC
+                        Driver 17 for SQL Server" and specifies your server name (e.g., Your_Server_Name\SQLEXPRESS),
+                        the database name (e.g., Your_DataBase_Name), and employs Windows Authentication by setting
+                        Trusted_Connection=yes.</p>
+
+                    <p>This setup enables us to securely connect to the database for inserting our scraped movie data.
+                    <pre>
+                                <code>
+    
+    # Function to insert data into SQL Server
+    def insert_into_database(movies):
+    # SQL Server connection setup with
+     Windows Authentication
+
+    connection = pyodbc.connect(
+        'DRIVER={ODBC Driver 17 for
+             SQL Server};'
+
+        'SERVER= Add_Your_SQL_ServerName;'  
+        # Add your SQL server name
+
+        'DATABASE=Add_Database_Name;'  
+        # SQL your Database name
+
+        'Trusted_Connection=yes;'
+    )
+
+
+                                </code>
+                            </pre>
+                    </p>
+
+
+                    <p>
+                        When connecting to a SQL Server, there are generally two methods of authentication available:
+
+                    <ol>
+                        <li><b>Windows Authentication: </b> method allows users to connect to the SQL Server using their
+                            Windows credentials. It's a secure option as it relies on the existing Windows user accounts
+                            and is typically recommended for environments where users are already authenticated within a
+                            Windows domain.</li>
+                        <li><b>SQL Server Authentication:</b> This method requires users to log in with a specific
+                            username and password set up in the SQL Server. It is useful for applications that need to
+                            connect to the database without relying on Windows accounts, but it can be less secure if
+                            not managed properly.</li>
+                    </ol>
+                    </p>
+                </div>
+
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>2. Establishing the Cursor and Verifying Table Existence:</h4>
+                    <p>The cursor is utilized to execute SQL commands. In this step, we verify whether a table named
+                        IMDB_Top_250_Movies exists in your database.</p>
+
+                    <p>If the table is not present, it will be created with the following fields:
+
+                    <ul>
+                        <li><b>id:</b> An auto-incrementing primary key.</li>
+                        <li><b>Title:</b> The title of the movie (text, mandatory).</li>
+                        <li><b>Year:</b> The year of release (integer).</li>
+                        <li><b>MovieTime:</b> The duration of the movie (e.g., '2h 14min').</li>
+                        <li><b>Runtime:</b> The movie's rating (e.g., 'PG', 'R').</li>
+                        <li><b>IMDB_Rating:</b> The IMDb rating (e.g., 8.5).</li>
+                        <li><b>Rating Count:</b> The total number of votes (e.g., '1.2M').</li>
+                        <li><b>Description:</b> A brief description of the movie.</li>
+                        <li><b>Director:</b> The name of the movie's director.</li>
+                        <li><b>Stars:</b> The main stars, stored as a string separated by commas.</li>
+                        <li><b>ImageURL:</b> The URL of the movie's poster image.</li>
+
+                    </ul>
+                    </p>
+
+
+                    <pre>
+                            <code>
+    cursor = connection.cursor()
+
+    # Create table if it doesn't exist
+    cursor.execute(''' IF NOT EXISTS 
+    (SELECT* FROM sysobjects WHERE 
+    name='IMDB_Top_250_Movies_1' 
+    AND xtype='U')
+
+    BEGIN
+    CREATE TABLE IMDB_Top_250_Movies (
+        id INT IDENTITY(1,1) PRIMARY KEY,
+        Title NVARCHAR(255) NOT NULL,
+        Year INT,
+        MovieTime NVARCHAR(10),
+        Runtime NVARCHAR(10),
+        IMDB_Rating FLOAT,
+        Rating_Count NVARCHAR(20),
+        Description TEXT,
+        Director VARCHAR(255),
+            Stars VARCHAR(255),
+        ImageURL NVARCHAR(MAX)
+        )
+    END
+    ''')
+
+                            </code>
+                        </pre>
+
+
+
+                </div>
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>3. Inserting Data into the Table:</h4>
+
+                    <p>The loop below goes through each movie in the movies list, which is provided to the
+                        insert_into_database function. For every movie, it inserts the movie details (such as title,
+                        year, runtime, rating, and more) into the database. Placeholders (?) are utilized for the
+                        values, and the corresponding movie data (like movie['Title'], movie['Year'], etc.) is supplied
+                        in the correct sequence.
+
+                    <pre>
+                            <code>
+        # Insert data into the table
+        for movie in movies:
+            cursor.execute('''
+                INSERT INTO IMDB_Top_250_
+                Movies_1 (TYear, MovieTime, 
+                Runtime, IMDB_RaRating_Count,
+                 Description, DireStars, ImageURL)                 
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ''', 
+            movie['Title'], 
+            movie['Year'], 
+            movie['Time'],
+            movie['Runtime'],  
+            movie['IMDb Rating'], 
+            movie['Rating Count'], 
+            movie['Description'], 
+            movie['Director'], 
+            movie['Stars'], 
+            movie['Image URL']
+        )
+                            
+                            </code>
+                        </pre>
+                    </p>
+                </div>
+
+
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>4. Committing Changes and Closing the Connection:</h4>
+                    <p>
+                    <pre>
+                                <code>
+                connection.commit()
+                cursor.close()
+                connection.close()
+    
+                                </code>
+                            </pre>
+
+                    Once all movie data has been inserted into the database, connection.commit() is called to save the
+                    changes. After that, the cursor and database connection are closed.
+                    </p>
+
+
+                    <p>Main Function - Executing the Scraper and Storing Data in SQL Server</p>
+
+                    <p>
+                        In this final step, we establish the main entry point of our Python script. Here's the process:
+                    <ul>
+                        <li><b>Data Scraping:</b> The script invokes the scrape_imdb_top_250() function to gather data
+                            from IMDb's Top 250 movies list. If the data collection is successful, it outputs the total
+                            number of movies scraped.</li>
+                        <li><b>Storing Data in SQL Server:</b> If movies are scraped successfully, the script then calls
+                            the insert_into_database() function, which inserts the scraped movie details into the SQL
+                            Server database.</li>
+                    </ul>
+                    </p>
+
+                </div>
+                <div class="col-lg-6 col-12 p-4 ">
+                    <h4>5. Error Handling:</h4>
+                    <p>If no data is scraped (in case of an error or failure), the script will notify you by printing
+                        <b> "No data scraped."</b>
+                    <pre>
+                            <code>
+         # Main function
+         if __name__ == '__main__':
+             # Scrape the data
+             movies = scrape_imdb_top_250()
+    
+             if movies:
+                 print(f"Scraped {len(movies)} 
+                 movies successfully!")
+        
+                 # Insert the scraped data 
+                 into SQL Server
+
+                 insert_into_database(movies)
+             else:
+                 print("No data scraped.")
+
+                            </code>
+                        </pre>
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6 col-12 p-4 ">
+                    <img src="Assets/Images/Data-extraction1-3.png" alt="coding-3-4" class="img-fluid rounded mt-4"
+                     style="object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section id="last-section" class="row my-5">
+            <div class="col-12 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                <h2>Conclusion</h2>
+            </div>
+
+            <div class="col-lg-6 col-12 p-4">
+ 
+            <p>
+                In this blog, you've discovered how to extract movie data from IMDb's Top 250 list and save
+                it in a SQL Server database using Python. We covered the entire process, including setting
+                up a web scraper with Selenium, managing the data you collected, and inserting it into the
+                database with Windows Authentication for smooth integration. You've now equipped yourself
+                with the skills to automate web scraping and data management effectively!
+                Whether you’re tackling a personal project or developing a professional application, this
+                method can be tailored to suit a wide range of situations. It can handle everything from
+                basic data gathering to more intricate web scraping tasks.
+
+            </p>
+        </div>
+        <div class="col-lg-4 col-12 p-4 order-2 order-lg-1 mb-5 text-center">
+            <img src="Assets/Images/data-anim-1.gif" alt="data-anim-1" class="img-fluid rounded mb-4"
+                style="width: 70%; height: 60%; object-fit: cover; ">
+        </div>
+
+        
+    </section>
+
+
+
+    </section>
+</main>
+
+
+<footer class="container-fluid border-top py-3 custom-footer text-center">
+
+    <div class="row my-5">
+        <p class="pt-5 text-center "> 
+            <a href="https://facebook.com" class=" mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" class=" mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" class=" mx-2"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com" class=" mx-2"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com" class="mx-2"><i class="bi bi-twitter"></i></a>
+        </p>
+        
+
+        <h5 class="mb-5 text-light">&copy; 2024 Blog. All rights reserved.</h5>
+    </div>
+   
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach((link) => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+    
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

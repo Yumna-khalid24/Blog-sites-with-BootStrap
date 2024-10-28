@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-2</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="stylesheet" href="Assets/Styles/Blog-2.css">
+</head>
+
+<body class="bg-light">
+
+    
+    <header class="container-fluid h-custom-background ">
+        <nav class="navbar navbar-expand-md nav-custom text-center p-4">
+
+            <a class="navbar-brand " href="main.html"></a>
+
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <span class="navbar-toggler-icon text-white p-0">
+                    <i class="bi bi-menu-button-wide"></i>
+                </span>
+            </button>
+
+
+            
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-1\Blog-1.html">Blog 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-2/Blog-2.html">Blog 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-3/Blog-3.html">Blog 3</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white mx-5 fw-bold" href="/Blog-Site-4/Blog-4.html">Blog 4</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container bg-white p-5">
+
+
+
+
+        <section id="hero-section" class="row">
+            <div class="col-lg-5 col-12 p-4">
+                <img src="Assets/Images/8-2.jpg" alt="Image-1-1 image" class="img-fluid rounded"
+                    style="width: 100%; height: 80%; object-fit: cover;">
+            </div>
+
+            <div class="col-lg-7 col-12 p-4">
+                <h1 class="mb-4">IMDb Data Extraction and Dashboard Creation</h1>
+
+                <span>
+                    <img src="Assets/Images/M.furqan-photo.jpg" alt="M-Furqan-Photo" class="img-fluid" style="width: 50px; height: 50px; border: 2px solid rgb(116, 114, 114) ; border-radius: 50%;">
+                    <h4 class="d-inline ms-2 "> Muhammad Furqan Uppal on Oct-04, 2024</h4>
+                </span>
+
+                <p class="text-secondary mt-4">The goal of this project was to extract, organize, and visualize movie
+                    and TV show data from the IMDb website and organize it into structured databases, clean and
+                    transform the data, and then
+                    visualize key insights using Power BI. Using Python’s BeautifulSoup for web scraping and SQL
+                    Server for data storage, I extracted details from IMDb’s Top 250 Movies, Most Popular Movies,
+                    Top 250 TV Shows, Most Popular TV Shows and What to watch lists</p>
+
+                <button type="button" class="btn btn-info">
+                    <a class="text-light text-decoration-none fw-bold"
+                        href="https://www.linkedin.com/in/furqanuppal/">Visit Profile</a>
+                </button>
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+        <section id="second-section" class="row my-5">
+
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Introduction </h2>
+                </div>
+                <div class="col-1">
+                    <!-- <img src="data-anim-1.gif" width="80px" height="80px" alt="data-animation" class="animation"> -->
+
+                </div>
+            </div>
+
+
+            <div class="row my-5">
+                <div class="col-lg-7 col-12 p-4 order-1 order-lg-2">
+
+                    <h4 class="mb-4">Problem Statement</h4>
+
+                    <p>How do movie budgets correlate with their gross revenue across various platforms (Disney,
+                        Netflix, Hulu, Max) and categories (Top 250 Movies, Most Popular Movies)? Does a higher budget
+                        lead to better financial performance? How do these relationships vary by genre and platform?</p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 order-2 order-lg-1 ">
+                    <img src="Assets/Images/7-2.png" alt="Image-2-1 image" class="img-fluid rounded mb-4"
+                        style="width: 100%; height: 100%; object-fit: cover; ">
+
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 order-1 order-lg-2">
+                    <h4>Goal</h4>
+                    <p>
+                    <ul>
+                        <li>Analyze <b>budget</b> vs <b>gross </b>revenue across movies in different streaming
+                            categories (Top 250 Movies, Most Popular Movies, Netflix Movies, etc.).</li>
+                        <li>Analyze budget vs gross revenue across movies in different streaming categories (Top 250
+                            Movies, Most Popular Movies, Netflix Movies, etc.).</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="col-lg-7 col-12 p-4 order-1 order-lg-2">
+
+                    <h4> The project involved the following key steps </h4>
+                    <ol>
+                        <li>Data extraction using Python and BeautifulSoup.</li>
+                        <li>Data cleaning and transformation, including handling currency conversions and missing
+                            values.</li>
+                        <li>Storing the data in SQL Server.</li>
+                        <li>Creating interactive dashboards in Power BI for insights.</li>
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="third-section" class="row my-5">
+
+
+
+            <div class="row my-5">
+                <div class="col-10 border-3 p-3 ms-4 mt-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Data Extraction:</h2>
+                </div>
+                <div class="col-1">
+                    <!-- <img src="Folder-1.gif" width="100px" height="100px" alt="folder animation" class="animation"> -->
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-7 col-12 p-4 ">
+
+
+
+                <p class="p-3">
+                    The following tables were created in SQL Server, each containing similar columns <i>like Series
+                        Title, Release Date, Certificate, Runtime, IMDb Rating, Genre, Overview, Director, Stars,
+                        No. of Votes, BudgetUSD, GrossWorldwideUSD, Poster Link, and Trailer Link:</i>
+                <ul>
+                    <li>Top 250 Movies</li>
+                    <li>Most Popular Movies</li>
+                    <li>Top 250 TV Shows</li>
+                    <li>Most Popular TV Shows</li>
+                    <li>Disney Movies</li>
+                    <li>Netflix Movies</li>
+                    <li>Hulu Movies</li>
+                    <li>Max Movies</li>
+                    <li>TV Streaming Movies</li>
+                </ul>
+                </p>
+                <p class="p-3">
+                    The Python code utilized BeautifulSoup to scrape movie and TV show information, including
+                    detailed metadata such as ratings, runtime, certificates, and financial information (budget and
+                    gross revenue). The extracted data was then stored in SQL Server.
+                </p>
+            </div>
+
+
+            <div class="col-lg-5 col-12 p-4  mb-5">
+                <img src="Assets/Images/data-1-2.png" alt="Image-3-1 image" class="img-fluid rounded mb-4"
+                    style="width: 100%; height: 70%; object-fit: cover; ">
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        <section id="fourth-section" class="row my-5">
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Code Snippet</h2>
+                </div>
+                <div class="col-1">
+                    <!-- <img src="Folder-2.gif" width="100px" height="100px" alt="folder-2 animation" class="animation"> -->
+
+                </div>
+            </div>
+
+            <div class="row my-5 justify-content-center">
+
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Importing Required Libraries</h3>
+                    <pre><code>
+import requests
+     from bs4 import BeautifulSoup
+     import json
+     import pyodbc
+     import time
+     import re
+                          </code></pre>
+                    <ul>
+                        <li><b>requests:</b> Used to make HTTP requests to websites to retrieve data.</li>
+                        <li><b>BeautifulSoup:</b> A web scraping library that parses HTML and XML documents.
+                        </li>
+                        <li><b>json:</b> To handle JSON data extracted from the website.</li>
+                        <li><b>pyodbc:</b> A library for connecting to databases using ODBC, specifically SQL
+                            Server in this case.</li>
+                        <li><b>time:</b> Used to control execution delays.</li>
+                        <li><b>re:</b> Provides regular expression matching operations.</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Establishing Database Connection</h3>
+                    <pre><code>
+connection = pyodbc.connect('DRIVER={SQL SERVER};'
+    'SERVER=DESKTOP-LTAP1EA;'
+    'DATABASE=IMDB;'
+    'UID=sa;'
+    'PWD=password ')
+     cursor = connection.cursor()
+                          </code></pre>
+                    <p>This establishes a connection to the SQL Server database using the credentials and server
+                        information provided. The cursor object allows you to execute SQL queries.</p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Creating Tables if Not Exists</h3>
+                    <pre><code>
+    table_creation_queries = [
+    '''...''',  # Multiple queries
+    for query in table_creation_queries:
+    cursor.execute(query)
+     connection.commit()
+                          </code></pre>
+                    <p>Defines a list of SQL queries to create tables (Disney_Movies, Netflix_Movies, Hulu_Movies,
+                        etc.) and checks if each table already exists before creation.</p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Fetching Data from IMDb</h3>
+                    <pre><code>
+    headers = {'User-Agent':'Mozilla/5.0'}
+        main_url = 'https://www.imdb.com/what-to-watch/?ref_=nv_watch'
+        response = requests.get(main_url, headers=headers)
+        soup = BeautifulSoup(response.text, 'html.parser')
+                          </code></pre>
+                    <ul>
+                        <li><b>headers:</b> Adds a user-agent header to the request, mimicking a real browser
+                            visit.</li>
+                        <li><b>main_url:</b> The main IMDb URL you’re scraping.</li>
+                        <li><b>requests.get():</b> Sends an HTTP request to the URL and retrieves its HTML.</li>
+                        <li><b>BeautifulSoup:</b> Parses the HTML content of the response.</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Extracting Movie URLs</h3>
+                    <pre><code>urls = []
+  count = 0
+  for div in div_tag:
+       a_tag = div.find('a', class_ = 'ipc-lockup-overlay ipc-focusable')
+       href = a_tag['href'] if a_tag else 'N/A'
+       full_url = ('https://www.imdb.com' + href)
+       urls.append(full_url)
+       count += 1
+       if count == 5:
+          break
+                          </code></pre>
+                    <ul>
+                        <li><b>urls:</b> Collects the full URLs of the top 5 movies.</li>
+                        <li><b>count:</b> Ensures only 5 URLs are extracted.</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Fetching Movie List from URLs</h3>
+                    <pre><code>
+for url in urls:
+     list_response = requests.get(url, headers=headers)
+     list_soup = BeautifulSoup(list_response.text, 'html.parser')
+     json_data_tag = list_soup.find('script', type='application/ld+json')
+                          </code></pre>
+                    <p>Iterates over the extracted URLs, fetching content and looking for JSON data (ld+json script
+                        tag) containing structured movie information.</p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Extracting Movie Details</h3>
+                    <pre><code>
+ for movie in movies:
+    movie_info = movie['item']
+    title = movie_info.get('name', None)
+    description = movie_info.get('description', None)
+    poster = movie_info.get('image', None)
+                          </code></pre>
+                    <p>Loops through JSON data to extract movie details like name, description, poster, rating, etc.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Fetching Detailed Information for Each Movie</h3>
+                    <pre><code>
+ def movie_details(movie_url):
+     movie_response = requests.get(movie_url, headers=headers)
+     movie_soup = BeautifulSoup(movie_response.text, 'html.parser')
+     details = {}
+     title = movie_soup.find('h1', {'data-testid': 'hero__pageTitle'})
+     return details
+                          </code></pre>
+                    <p>The function `movie_details()` scrapes detailed movie information from a given URL.</p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Processing Budget Information</h3>
+                    <pre><code>
+    def process_budget(details):
+        budget_value = details['budget']
+        match = re.match(r'([\D]+)\s*([\d,]+)', budget_value)
+                          </code></pre>
+                    <p>Processes the budget string to separate currency from the numeric value using regular
+                        expressions.</p>
+                </div>
+
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Converting Budget to USD</h3>
+                    <pre><code>
+    def convert_to_usd(budget_value, budget_currency):
+      urrency_mapping = {'USD': 1.0000, 'CA$': 0.74, '¥': 0.0069, '€': 1.11}
+                          </code></pre>
+                    <p>Converts the extracted budget into USD based on predefined conversion rates.</p>
+                </div>
+
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Determining the Correct Table Name</h3>
+                    <pre><code>
+    def get_table_name(url):
+      if 'disney' in url:
+        return 'Disney_Movies'
+
+                          </code></pre>
+                    <p>Returns the appropriate table name for a given URL, to insert movie data into the SQL
+                        database.</p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Inserting Data into SQL Database</h3>
+                    <pre>
+                                <code>
+    cursor.execute(f'''
+    INSERT INTO {table_name} 
+    (SeriesTitle, ReleaseDate, Certificate,
+     Runtime, ImdbRating, Genre, Overview, 
+     Director, Stars, NoOfVotes, BudgetUSD, 
+    GrossWorldwideUSD, PosterLink, TrailerLink)
+                                    
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+     ?, ?, ?)
+    ''', 
+    movie_dtl['title'], 
+    # More details...
+    )
+                                
+                               </code>  
+                                </pre>
+                    <p>
+                        Here, the script inserts the extracted movie details into the respective SQL table using
+                        parameterized queries. It ensures all the information is saved into the appropriate fields.
+
+                    </p>
+                </div>
+
+
+
+
+                <div class="col-lg-5 col-12 p-4 code">
+                    <h3>Code Snippet: Closing the Database Connection</h3>
+                    <pre>
+                                <code>
+    cursor.close()
+    connection.close()
+                                    
+                               </code>  
+                                </pre>
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="fifth-section" class="row my-5">
+
+            <div class="row">
+                <div class="col-10 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Data Cleaning and Transformation</h2>
+
+                </div>
+                <div class="col-1">
+                    <!-- <img src="data-scrapping-1.png" width="80px" height="80px" alt="data scrapping animation"
+                        class="animation"> -->
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 p-4 order-2 order-lg-1 mb-5">
+                <p>
+                    Special attention was given to fields like Budget, which included currency symbols and values (e.g.,
+                    CA$, ¥). A function was developed to convert the values into USD, ensuring consistency across the
+                    datasets.
+                </p>
+
+
+            </div>
+
+            <div class="col-lg-6 col-12 p-4">
+                <img src="Assets/Images/data-2-2.jpg" alt="data-2-2 " class="img-fluid rounded mb-4"
+                    style="width: 100%; height:80%; object-fit: cover; ">
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+
+
+        <section id="sixth-section" class="row my-5">
+            <div class="row">
+                <div class="col-12 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                    <h2>Power BI Dashboards</h2>
+                </div>
+
+                <div class="col">
+                    <p class="p-3">With the data stored in SQL Server, Power BI was used to create interactive
+                        dashboards, offering
+                        insights into the movies and TV shows. The dashboards include visualizations like bar charts,
+                        line charts, and scatter plots for various metrics such as IMDb ratings, budget vs. gross
+                        revenue, and genre analysis. Six Power BI dashboards were created to visualize key metrics and
+                        trends from the extracted data.
+
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-7 col-12 p-4">
+                    <h4 class="mb-3">Overview Dashboard</h4>
+
+                    <h5>Visuals:</h5>
+                    <ul>
+                        <li><b>Card Visual:</b> Displays the total count of movies and TV shows combined.</li>
+                        <li><b>Pie Chart:</b> Breaks down the count of movies vs. TV shows, giving a clear
+                            percentage of each category.</li>
+                        <li><b>Bar Chart:</b> Shows the average IMDb rating across all movies and TV shows, helping
+                            you to see how well-rated the content is overall.</li>
+                        <li><b>Line Chart:</b> Plots the relationship between Budget and Gross Revenue, allowing
+                            for visual comparison between the amount spent and revenue generated.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-12 p-4">
+                    <img src="Assets/Images/1-2.png" alt="1-2 image" class="img-fluid rounded mb-4"
+                        style="width: 100%; height: 100%; object-fit: cover; ">
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-7 col-12 p-4">
+                    <h4 class="mb-3">Movies Dashboard</h4>
+
+                    <h5>Visuals:</h5>
+                    <ul>
+                        <li><b>Card Visual:</b> Shows the total count of all movies in your dataset</li>
+                        <li><b>Bar Chart:</b> Displays the Top 10 movies based on IMDb rating, highlighting
+                            the
+                            best-rated content..</li>
+                        <li><b>Stacked Bar Chart:</b> Groups the movies based on Certificate (like PG-13, R,
+                            etc.), providing insight into content rating distribution.</li>
+                        <li><b>Bar/Line Chart:</b> Shows movies with the highest gross revenue, giving a
+                            sense of
+                            financial success.</li>
+                        <li><b>Scatter Plot:</b> Plots Budget against IMDb Rating, helping to observe any
+                            correlation between the two.</li>
+                        <li><b>Average Revenue of Movies:</b> Calculates and displays the average revenue
+                            for
+                            movies.</li>
+                    </ul>
+                    <p>
+
+                    <h5>Slicers:</h5> Interactive filters are added, allowing users to filter the dashboard
+                    by
+                    Genre.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4">
+                    <img src="Assets/Images/2-2.png" alt="2-2 image" class="img-fluid rounded mb-4"
+                        style="width: 100%; height: 100%; object-fit: cover; ">
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-7 col-12 p-4">
+                    <h4 class="mb-3">TV Shows Dashboard</h4>
+                    <h5>Visuals:</h5>
+                    <ul>
+                        <li><b>Card Visual: </b>Displays the total count of TV shows in your dataset.</li>
+                        <li><b>Bar Chart: </b>Highlights the Top 10 TV shows based on IMDb rating,
+                            showcasing the best-rated shows.</li>
+                        <li><b>Pie Chart: </b>Visualizes the distribution of TV shows by Genre, helping to
+                            see which genres are most common.</li>
+                        <li><b>Bar Chart: </b>Displays the Top 20 TV shows by number of votes, showing which
+                            shows received the most engagement from viewers.</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4">
+                    <img src="Assets/Images/3-2.png" alt="Image-3-2 image" class="img-fluid rounded mb-4"
+                        style="width: 100%; height: 100%; object-fit: cover; ">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-7 col-12 p-4">
+                    <h4 class="mb-3">Genre Analysis Dashboard</h4>
+
+                    <h5>Visuals</h5>
+                    <ul>
+                        <li><b>Card Visual:</b> Shows the total distinct count of Certificates.</li>
+                        <li><b>Card Visual:</b> Shows the total distinct count of Genres.</li>
+                        <li><b>Bar Chart:</b> Displays the average IMDb rating grouped by Genre, showing how
+                            different genres perform in terms of ratings.</li>
+                        <li><b>Bar Chart:</b> Displays the average number of votes per genre.</li>
+                        <li><b>Bar and Line Chart:</b> Plots the average Budget and Gross Revenue by genre,
+                            offering insights into which genres are more profitable.</li>
+                    </ul>
+                    <p>
+                    <h5>Slicers:</h5> Users can filter by Type (Movie or TV Show) and by Certificate (e.g.,PG, R) to
+                    further explore the data.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4">
+                    <img src="Assets/Images/4-2.png" alt="4-2 image" class="img-fluid rounded mb-4"
+                        style="width: 100%; height: 100%; object-fit: cover; ">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-7 col-12 p-4">
+                    <h4 class="mb-3">Financial Performance Dashboard</h4>
+
+                    <h5>Visuals</h5>
+                    <ul>
+                        <li><b>Card Visual:</b> Shows the sum of the total gross revenue generated by all
+                            content in the dataset.</li>
+                        <li><b>Stacked Bar Chart:</b> Compares the Total Budget vs. Gross Revenue by movie,
+                            highlighting financial performance.</li>
+                        <li><b>Bar Chart:</b> Displays the Top 15 most profitable movies, calculated as
+                            Gross Revenue minus Budget.</li>
+                        <li><b>Line Chart:</b> Shows trends in Budget and Gross Revenue over time, providing
+                            insights into how these figures have changed.</li>
+                    </ul>
+                    <p>
+                    <h5>Slicers:</h5> Allows filtering by year to focus on the gross revenue generated in specific
+                    years.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4">
+                    <img src="Assets/Images/5-2.png" alt="5-2 image" class="img-fluid rounded mb-4"
+                        style="width: 100%; height: 100%; object-fit: cover; ">
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-7 col-12 p-4">
+                    <h4 class="mb-3">Time-Based Trends Dashboard</h4>
+
+                    <h5>Visuals</h5>
+                    <ul>
+                        <li><b>Line Chart:</b> Shows the number of movies and TV shows released each year,
+                            offering a view of how releases have trended over time.</li>
+                        <li><b>Line Chart:</b> Tracks IMDb ratings over time, providing insight into how
+                            ratings have fluctuated.</li>
+
+                    </ul>
+                    <p>
+                    <h5>Slicers:</h5> Filters the data by <b>Type</b> (Movie or TV Show) to allow for
+                    analysis of time-based trends for either category.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 col-12 p-4">
+                    <img src="Assets/Images/6-2.png" alt="6-2 image" class="img-fluid rounded mb-4"
+                        style="width: 100%; height: 100%; object-fit: cover; ">
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section id="last-section" class="row my-5">
+            <div class="col-12 border-3 p-3 ms-4 my-5" style="border-left: 2px solid  rgb(28, 212, 154);">
+                <h2>Conclusion</h2>
+            </div>
+
+            <div class="col-lg-8 col-12 p-4">
+                <p>These dashboards provide both a high-level overview and deeper insights into the performance,
+                    ratings, and financial success of movies and TV shows from IMDb data.</p>
+                <p> To get code files and Dashboards, visit the following link:
+                    <br>
+                    <a href="https://github.com/furqanuppal/IMDB/">github</a>
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-12 p-4 order-2 order-lg-1 mb-5 text-center">
+                <img src="Assets/Images/data-anim-1.gif" alt="DATA ANIMATION GIF " class="img-fluid rounded mb-4"
+                    style="width: 70%; height: 60%; object-fit: cover; ">
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+        </section>
+
+
+    </main>
+    <footer class="container-fluid border-top py-3 custom-footer text-center">
+
+        <div class="row my-5">
+            <p class="pt-5 text-center "> 
+                <a href="https://facebook.com" class=" mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com" class=" mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com" class=" mx-2"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com" class=" mx-2"><i class="bi bi-github"></i></a>
+                <a href="https://twitter.com" class="mx-2"><i class="bi bi-twitter"></i></a>
+            </p>
+            
+    
+            <h5 class="mb-5 text-light">&copy; 2024 Blog. All rights reserved.</h5>
+        </div>
+       
+
+    </footer>
+        <script>
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach((link) => {
+              if (link.href === window.location.href) {
+                link.classList.add('active');
+              }
+            });
+            
+            </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
